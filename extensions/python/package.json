@@ -1,0 +1,25 @@
+{
+  "name": "coms-python",
+  "displayName": "coms Python",
+  "description": "Python built into coms — PMOC plane(), not a marketplace add-on.",
+  "version": "0.1.0",
+  "publisher": "PxD2",
+  "engines": { "vscode": "^1.85.0" },
+  "categories": ["Programming Languages"],
+  "activationEvents": ["onLanguage:python"],
+  "contributes": {
+    "languages": [
+      {
+        "id": "python",
+        "aliases": ["Python", "coms-python"],
+        "extensions": [".py"]
+      }
+    ],
+    "configurationDefaults": {
+      "[python]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true
+      }
+    }
+  }
+}
